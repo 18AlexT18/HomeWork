@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>[Tarasenko-QA-31] Некорректная визуализация слова &quot;Зв&apos;язатися&quot; в footer сайта</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome </preconds>
+										<steps>**Шаги воспроизведения**
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Обратить внимание на апостроф.</steps>
+										<expected>**Ожидаемый результат**
+В слове &quot;Зв&apos;язатися&quot; апострф находится между буквами &quot;В&quot; и &quot;Я&quot;.
+**Фактический результат**
+В слове &quot;Зв&apos;язатися&quot; апострф находится над буквой &quot;Я&quot;. 
+
+https://prnt.sc/TmwdvtPAUCk_
+
+
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>[Tarasenko-QA-31] В EN локализации политика конфидециальности на ru языке</title>
+												<template>Test Case (Text)</template>
+																<type>Acceptance</type>
+																<priority>High</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию EN в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;; 
+4) Кдикнуть на сторуку the privacy policy.</steps>
+										<expected>**Ожидаемый результат**
+Политика конфиденциальности в той локализации, которую выбрал пользователь.
+
+
+**Фактический результат**
+В EN локализации политика конфидециальности на ru языке.
+
+https://prnt.sc/ku7VXeu_jbqz
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>[Tarasenko-QA-31] Некорректная визуализация слова &quot;ім&apos;я&quot; в footer сайта</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Обратить внимание на апостроф в строке заполнение &quot;&quot;ім&apos;я&quot;.</steps>
+										<expected>**Ожидаемый результат**
+В слове &quot;ім&apos;я&quot; апострф находится между буквами &quot;М&quot; и &quot;Я&quot;.
+
+
+Фактический результат
+В слове &quot;ім&apos;я&quot; апострф находится над буквой &quot;Я&quot;.
+
+https://prnt.sc/LwzTyBy26ORm
+
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C5</id>
+				<title>[Tarasenko-QA-31] Некорректная проверка системы на валидность адреса электронной почты</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Слева от строки &quot;E-mail&quot; кликнуть (Зажать и перетащить) любой номер телефона в данную строку.
+5) Заполнить остальные строки и кликнуть отправить</steps>
+										<expected>**Ожидаемый результат**
+Система выдает ошибку, либо уведомление, в случае некорректного ввода адреса электронной почты.
+
+**Фактический результат**
+&quot;Форма отправлена&quot; Некорректная проверка системы на валидность адреса электронной почты.
+
+https://prnt.sc/4E8cmW0YIl9d
+
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C7</id>
+				<title>[Tarasenko-QA-31] Error 404 &quot;Приватні інвестиції&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Кликнуть на ссылку &quot;Приватні інвестиції&quot;.</steps>
+										<expected>**Ожидаемый результат**
+Страница  &quot;Приватні інвестиції&quot; открывается без ошибок.
+
+**Фактический результат**
+Появляется страница с ошибкой &quot;404.Not found&quot;
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>[Tarasebko-QA-31]  Проверка ввода в строку телефон некорректных символов</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) В строке &quot;телефон&quot; ввести буквы и символы;
+ 
+</steps>
+										<expected>**Ожидаемый результат**
+Ввод в строку &quot;телефон&quot; неккоректных символов невозможен
+
+**Фактический результат**
+Ввод в строку &quot;телефон&quot; неккоректных символов невозможен
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>[Tarasenko-QA-31]  Проверка возможности копирования и вставки символов в строку ввода &quot;Коментар&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Выделить любой отрезок текста на странице;
+5) Нажать Ctrl + C (копирование);
+6) Нажать Ctrl + V (вставка) в поле ввода &quot;коментар&quot;;</steps>
+										<expected>**Ожидаемый результат**
+Скопированный текст, вставляется в поле ввода &quot;коментар&quot;.
+**Фактический результат**
+Скопированный текст, вставляется в поле ввода &quot;коментар&quot;.
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>[Tarasenko-QA-31]  Проверить, что ссылки на соцсети в блоке &quot;Зв&apos;язатися з нами&quot; кликабельны</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																				<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Кликнуть на все ссылки соцсетей (facebook, instagram, linkedin, younube);</steps>
+										<expected>**Ожидаемый результат**
+Все ссылки на соцсети - кликабельны и осуществляется шледующий шаг (переход на страницу);
+**Фактический результат**
+Все ссылки на соцсети - кликабельны и осуществляется шледующий шаг (переход на страницу).
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C11</id>
+				<title>[Tarasebko-QA-31] Проверка ввода в строку телефон менее пяти цифр</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Вести в сторку &quot;телефон&quot; любые 5 цифр;</steps>
+										<expected>**Ожидаемый результат**
+Система оповещает об ошибке (некорректный номер телефона);
+**Фактический результат**
+Система оповещает об ошибке (некорректный номер телефона).
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>[Tarasebko-QA-31] Проверка ввода в поле &quot;имя&quot; большше 40 символов</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) В поле &quot;имя&quot; ввести больше 40 символов</steps>
+										<expected>**Ожидаемый результат**
+В поле &quot;имя&quot; большше 40 символов ввести не возможно.
+**Фактический результат**
+В поле &quot;имя&quot; большше 40 символов ввести не возможно.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>[Tarasenko-QA-31] Проверка кликабельности ссылки &quot;политики конфиденциальности&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) кликнуть на ссылку  &quot;политики конфиденциальности&quot;.</steps>
+										<expected>**Ожидаемый результат**
+Ссылка &quot;политики конфиденциальности&quot; кликабельна и осуществляется следующий шаг (переход на страницу).
+**Фактический результат**
+Ссылка &quot;политики конфиденциальности&quot; кликабельна и осуществляется следующий шаг (переход на страницу).
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C14</id>
+				<title>[Tarasenko-QA-31] Проверка сообщения об ошибке при пустом checkbox &quot;политики конфиденциальности&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																				<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) В строке &quot;политики конфиденциальности&quot; checkbox оставить пустым;
+5) Заполнить форму блока &quot;Зв&apos;язатися з нами&quot; &amp;gt; &quot;Отправить&quot;.
+
+</steps>
+										<expected>**Ожидаемый результат**
+При пустом checkbox, система не пускает на следующий шаг.
+**Фактический результат**
+При пустом checkbox, система не пускает на следующий шаг.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C15</id>
+				<title>[Tarasenko-QA-31] Наложение верстки в мобильной версии</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) Нажать на клавиатуре F12;
+5) В header выбрать iPhone 4;
+6) Кликнуть на элемент toggle device toolbar (2я строка сверху, 2й элемент слева);
+7) Обратить внимание на строку &quot;коментар&quot;.</steps>
+										<expected>**Ожидаемій результат**
+Контент в мобильной версии читабелен.
+**Фактический результат**
+Наложение верстки в мобильной версии
+
+https://prnt.sc/ni1YaKXFv7DS
+
+
+
+
+
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C16</id>
+				<title>[Tarasenko-QA-31] проверка кликабельности accordeon в блоке &quot;Зв&apos;язатися з нами&quot;</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+								<assignedto>Al T</assignedto>
+												<estimate></estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome</preconds>
+										<steps>Шаги воспроизведения
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) В блоке &quot;Зв&apos;язатися з нами&quot; кликнуть на accordeon &quot;комерцшйна пропозиція&quot;.</steps>
+										<expected>**Ожидаемый результат**
+Кликабельность скрываемый и открываемый контент элемента интерфейса accordeon  в блоке &quot;Зв&apos;язатися з нами&quot; - корректна.
+**Фактический результат**
+Кликабельность скрываемый и открываемый контент элемента интерфейса accordeon  в блоке &quot;Зв&apos;язатися з нами&quot; - корректна.
+
+
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Test Cases</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C2</id>
+				<title>[Tarasenko-QA-31] Некорректная проверка системы на валидность адреса электронной почты</title>
+												<template>Test Case (Text)</template>
+																<type>Security</type>
+																<priority>High</priority>
+								<assignedto>Al T</assignedto>
+												<estimate>300</estimate>
+																								<references></references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Browser Google Chrome </preconds>
+										<steps>**Шаги воспроизведения**
+
+1) Открыть главную страницу сайта Zezman.ua/ua;
+2) Выбрать локализацию UA в header (в верхнем правом углу);
+3) Пролистать страницу вниз (Ctrl + scroll down) до раздела &quot;Зв&apos;язатися з нами&quot;;
+4) В поле ввода электронного адреса ввести несуществующий адрес электронной почты (пример: sudo.su@bigfoot.ufo).
+
+</steps>
+										<expected>**Ожидаемый результат**
+Система выдает ошибку, либо уведомление, в случае некорректного ввода адреса электронной почты.
+
+
+**Фактический результат** 
+Некорректная проверка системы на валидность адреса электронной почты.
+
+https://prnt.sc/vEUwvUM-xCga
+
+
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
